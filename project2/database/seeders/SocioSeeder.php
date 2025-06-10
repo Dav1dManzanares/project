@@ -13,8 +13,8 @@ class SocioSeeder extends Seeder
      */
     public function run(): void
     {
-        $lotes = 40; // 40 lotes de 50 = 2000
-        $por_lote = 50;
+        $lotes = 100; // 100 lotes de 100 = 10000
+        $por_lote = 100;
 
         for ($i = 0; $i < $lotes; $i++) {
             Socio::factory($por_lote)->create();

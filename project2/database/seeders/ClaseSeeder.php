@@ -13,8 +13,8 @@ class ClaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $lotes = 15; // 15 lotes de 10 = 150
-        $por_lote = 10;
+        $lotes = 100; // 500 lotes de 100 = 50000
+        $por_lote = 100;
 
         for ($i = 0; $i < $lotes; $i++) {
             Clase::factory($por_lote)->create();

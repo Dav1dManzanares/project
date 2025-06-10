@@ -40,16 +40,16 @@ class DatabaseSeeder extends Seeder
         echo "⭐ Creando evaluaciones...\n";
         $this->call(EvaluacionSeeder::class);
         
-        echo "\n✅ ¡Seeding completado!\n";
-        echo "📊 Datos creados:\n";
-        echo "   - ~55 Membresías\n";
-        echo "   - ~105 Entrenadores\n";
-        echo "   - 2,000 Socios\n";
-        echo "   - 150 Clases\n";
-        echo "   - 5,000 Pagos\n";
-        echo "   - 3,000 Inscripciones\n";
-        echo "   - 2,500 Evaluaciones\n";
-        echo "   TOTAL: ~12,810 registros\n";
+        // echo "\n✅ ¡Seeding completado!\n";
+        // echo "📊 Datos creados:\n";
+        // echo "   - ~55 Membresías\n";
+        // echo "   - ~105 Entrenadores\n";
+        // echo "   - 2,000 Socios\n";
+        // echo "   - 150 Clases\n";
+        // echo "   - 5,000 Pagos\n";
+        // echo "   - 3,000 Inscripciones\n";
+        // echo "   - 2,500 Evaluaciones\n";
+        // echo "   TOTAL: ~12,810 registros\n";
     }
     
 }

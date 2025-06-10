@@ -28,7 +28,7 @@ class MembresiaSeeder extends Seeder
         }
 
         // Luego crear masivamente
-        Membresia::factory(50)->create();
+        Membresia::factory(500)->create();
     }
 
 }

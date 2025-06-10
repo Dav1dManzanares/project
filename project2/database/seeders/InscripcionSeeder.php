@@ -13,7 +13,7 @@ class InscripcionSeeder extends Seeder
      */
     public function run(): void
     {
-        $lotes = 30; // 30 lotes de 100 = 3000
+        $lotes = 100; // 100 lotes de 100 = 10000
         $por_lote = 100;
 
         for ($i = 0; $i < $lotes; $i++) {
