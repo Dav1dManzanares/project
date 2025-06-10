@@ -10,7 +10,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/performance-test/:num', function () {
+Route::get('/performance-test/', function () {
     // 1. Consulta SIN índice
     $startTestIndex = microtime(true);
     Product::where('is_active', true)->count();
