@@ -26,7 +26,7 @@ class EntrenadorSeeder extends Seeder
         }
 
         // Crear masivamente
-        Entrenador::factory(500)->create();
+        Entrenador::factory(250)->create();
     }
     
 }

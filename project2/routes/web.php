@@ -16,6 +16,10 @@ Route::get('/', function () {
 Route::get('/benchmark', [BenchmarkController::class, 'benchmark']);
 Route::get('/benchmark/simple', [BenchmarkController::class, 'benchmarkSimple']);
 
+
+
+
+// ruta de pruebas
 Route::get('/performance-test/{limit}', function ($limit) {
 
     // // clases

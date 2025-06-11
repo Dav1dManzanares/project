@@ -18,7 +18,7 @@ class BenchmarkController extends Controller
     public function benchmark(Request $request)
     {
         $iterations = $request->get('iterations', 2); // Múltiples iteraciones para promedio
-        $limit = $request->get('limit', 50000);
+        $limit = $request->get('limit', 5000);
 
         // Información del sistema
         $systemInfo = $this->getSystemInfo();
@@ -227,8 +227,8 @@ class BenchmarkController extends Controller
         return $results;
     }
 
-    // private function measureQuery($callback)
-// VERSIÓN SIMPLIFICADA si la anterior es muy compleja
+
+    // VERSIÓN SIMPLIFICADA si la anterior es muy compleja
     private function measureQuery($callback)
     {
         // Limpiar memoria antes de medir
@@ -424,34 +424,4 @@ class BenchmarkController extends Controller
 
         return sqrt($variance);
     }
-
-    // private function generateRecommendations($statistics)
-    // {
-    //     $recommendations = [];
-
-    //     // Analizar tiempos de ejecución
-    //     foreach ($statistics as $metric => $stats) {
-    //         if (strpos($metric, 'execution_time_ms') !== false) {
-    //             if ($stats['avg'] > 1000) { // Más de 1 segundo
-    //                 $recommendations[] = [
-    //                     'type' => 'performance',
-    //                     'severity' => 'high',
-    //                     'metric' => $metric,
-    //                     'message' => "La consulta '{$metric}' tiene un tiempo promedio de {$stats['avg']}ms. Considera optimizar con índices.",
-    //                     'suggestion' => 'Revisar el plan de ejecución con EXPLAIN y agregar índices apropiados.'
-    //                 ];
-    //             } elseif ($stats['avg'] > 100) { // Más de 100ms
-    //                 $recommendations[] = [
-    //                     'type' => 'performance',
-    //                     'severity' => 'medium',
-    //                     'metric' => $metric,
-    //                     'message' => "La consulta '{$metric}' podría optimizarse. Tiempo promedio: {$stats['avg']}ms.",
-    //                     'suggestion' => 'Considera agregar índices o optimizar la consulta.'
-    //                 ];
-    //             }
-    //         }
-    //     }
-
-    //     return $recommendations;
-    // }
 }

@@ -13,7 +13,7 @@ class EvaluacionSeeder extends Seeder
      */
     public function run(): void
     {
-        $lotes = 50; // 50 lotes de 100 = 5000
+        $lotes = 25; // 50 lotes de 100 = 5000
         $por_lote = 100;
 
         for ($i = 0; $i < $lotes; $i++) {

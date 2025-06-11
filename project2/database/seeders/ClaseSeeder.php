@@ -13,7 +13,7 @@ class ClaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $lotes = 100; // 500 lotes de 100 = 50000
+        $lotes = 50; // 500 lotes de 100 = 50000
         $por_lote = 100;
 
         for ($i = 0; $i < $lotes; $i++) {
